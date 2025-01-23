@@ -1,8 +1,8 @@
 # Typst Engineering Resume Template
 
-This is a Engineer Resume (software, mechanical, etc.) template in Typst.
+This is a Engineer Resume template in Typst.
 
-It is a single file that you copy and paste, then adjust to your needs. It is based on the [r/EngineeringResumes](https://www.reddit.com/r/EngineeringResumes/) template.
+It is a [single file](./resume.typ) that you copy and paste, then adjust to your needs. It is based on the [r/EngineeringResumes](https://www.reddit.com/r/EngineeringResumes/) template.
 
 ## Preview
 
@@ -15,13 +15,13 @@ You can use the [typst website](https://typst.app/) to do everything on the inte
 - Zathura, a PDF viewer
 - Typst
 
-To compile your `resume.typ` into a `resume.pdf`, run:
+Compile your `resume.typ` into a `resume.pdf`:
 
 ```sh
 typst watch resume.typ
 ```
 
-To view the `resume.pdf` use:
+View the `resume.pdf`:
 
 ```sh
 zathura resume.pdf
