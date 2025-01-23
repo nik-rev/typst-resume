@@ -6,6 +6,8 @@ It is a single file that you copy and paste, then adjust to your needs. It is ba
 
 ## Preview
 
+![resume](https://github.com/user-attachments/assets/7198c759-eaff-43e5-b60d-2f5f32ca1f38)
+
 ## Usage
 
 You can use the [typst website](https://typst.app/) to do everything on the internet, or you can download these CLI tools to compile typst locally:
