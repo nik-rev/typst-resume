@@ -18,7 +18,7 @@ Compile your `resume.typ` into a `resume.pdf`:
 typst watch resume.typ
 ```
 
-View the `resume.pdf` (with [Zathura](https://github.com/pwmt/zathura)):
+View the `resume.pdf` (with [Zathura](https://github.com/pwmt/zathura) for example. Any other PDF viewer will do):
 
 ```sh
 zathura resume.pdf
