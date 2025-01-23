@@ -10,10 +10,7 @@ It is a [single file](./resume.typ) that you copy and paste, then adjust to your
 
 ## Usage
 
-You can use the [typst website](https://typst.app/) to do everything on the internet, or you can download these CLI tools to compile typst locally:
-
-- Zathura, a PDF viewer
-- Typst
+You can use the [typst website](https://typst.app/) to do everything on the internet, or you can compile and preview it locally:
 
 Compile your `resume.typ` into a `resume.pdf`:
 
@@ -21,7 +18,7 @@ Compile your `resume.typ` into a `resume.pdf`:
 typst watch resume.typ
 ```
 
-View the `resume.pdf`:
+View the `resume.pdf` (with [Zathura](https://github.com/pwmt/zathura)):
 
 ```sh
 zathura resume.pdf
