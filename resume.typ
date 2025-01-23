@@ -1,11 +1,34 @@
+// #set parameters for the page and text.
+// These get applied everywhere.
 #set page(margin: 0.5in)
 #set text(size: 11pt, font: "XCharter")
 
+// Typst has functions, which take some parameters and expand into some markup.
+//
+// For instance, the function below can be called like this:
+//
+// #project_title("Hello World", "somewhere.com")
+//
+// And it expands into the following:
+//
+// #block(width: 100%)[
+//   *Hello World*
+//   #h(1fr)
+//   #link("https://somewhere.com")[somewhere.com]
+//   #v(-5pt)
+// ]
 #let project_title(title, url) = {
+  // You can think of the block function as a <div>, just a generic
+  // container useful to set rules on some elements
+  //
+  // Like here, we want the title at the start, and the link at the end, with whitespace between
   block(width: 100%)[
+    // Reference variables and functions using `#`.
     *#title*
+    // Horizontal space, equal to "whatever's left"
     #h(1fr)
     #link("https://" + url)[#url]
+    // Vertical space
     #v(-5pt)
   ]
 }
@@ -21,6 +44,7 @@
 
 #let h2(title) = {
   block(width: 100%)[
+    // #set rules are scoped locally
     #set text(size: 10pt)
     == #title
     #v(-2pt)
@@ -29,6 +53,17 @@
   ]
 }
 
+// This is similar to the above functions, but it is called implicitly. For instance transforming this:
+//
+// == Hello world
+//
+// into this:
+//
+// block(width: 100%)[
+//   #text(size: 12pt, weight: "bold")[Hello world]
+//   #v(-11pt)
+//   #line(length: 100%, stroke: 0.7pt)
+// ]
 #show heading.where(level: 2): it => block(width: 100%)[
   #text(size: 12pt, weight: "bold")[#it.body]
   #v(-11pt)
@@ -37,7 +72,7 @@
 
 #align(center)[
   #block(width: 100%)[
-    #text(size: 17pt, weight: "regular")[John Doe]
+    #text(size: 24pt, weight: "regular")[John Doe]
   ]
   #set text(size: 11pt)
   #link("mailto:john@doe.com")[johndoe\@email.com] |
