@@ -6,7 +6,8 @@ It is a [single file](./resume.typ) that you copy and paste, then adjust to your
 
 ## Preview
 
-![resume](https://github.com/user-attachments/assets/7198c759-eaff-43e5-b60d-2f5f32ca1f38)
+![image](https://github.com/user-attachments/assets/9800efd5-1dd8-4e17-b876-a19be58a305d)
+
 
 ## Usage
 
